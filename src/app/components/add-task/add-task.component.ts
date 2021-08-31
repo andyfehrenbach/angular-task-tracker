@@ -13,7 +13,7 @@ export class AddTaskComponent implements OnInit {
   day: string
   reminder: boolean = false
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter()
-  showAddTask: boolean
+  showAddTask: boolean = true
   subscription: Subscription;
 
   constructor(private uiService: UiService) {
